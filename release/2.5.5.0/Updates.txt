@@ -1,0 +1,7 @@
+- Update the device types
+{http://docs.oasis-open.org/ws-dd/ns/dpws/2009/01}Device
+{http://schemas.xmlsoap.org/ws/2006/02/devprof}Device
+{http://telecom-sudparis.eu}LightBulb
+
+- Automatically detect the IP address of the local computer to bind to devices
+When a user opens a *.dpwsim file, he will be asked to input the IP address for binding to devices (the local computer IP address is detected and prompted)

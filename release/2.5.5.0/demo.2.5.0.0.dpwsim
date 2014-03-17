@@ -1,0 +1,20 @@
+Space
+Space,Default layout,192.168.56.1
+DEVICE,L1386005237824,Telecom SudParis,http://telecom-sudparis.eu,192.168.56.1,4567,LightBulb
+OPERATION,SwitchOn,param,/res/devices/lighton.png
+OPERATION,SwitchOff,param,/res/devices/lightoff.png
+
+EVENT,PresenceDetect,paramOn,Object detected!,0
+
+187
+94
+DEVICE,CM1386005242497,Telecom SudParis,http://telecom-sudparis.eu,192.168.56.1,4567,CoffeeMaker
+OPERATION,SwitchOn,param,/res/devices/coffeeon.png
+OPERATION,SwitchOff,param,/res/devices/coffeeoff.png
+
+EVENT,Finish,param,Coffee ready!,0
+EVENT,WaterOut,param,Out of water!,0
+EVENT,CoffeeOut,param,Out of coffee!,0
+
+356
+176
