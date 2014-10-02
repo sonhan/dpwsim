@@ -29,7 +29,7 @@ import org.ws4d.java.types.XAddressInfoSet;
 
 public class DPWSUtil {
 	/**
-	 * 
+	 * @author Son Han
 	 * Static method to invoke an operation with provided info
 	 * 
 	 * @param epr

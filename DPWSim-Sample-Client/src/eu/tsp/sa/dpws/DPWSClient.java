@@ -33,7 +33,11 @@ import org.ws4d.java.types.SearchParameter;
 import org.ws4d.java.types.URI;
 import org.ws4d.java.types.XAddressInfo;
 import org.ws4d.java.types.XAddressInfoSet;
-
+/**
+ * 
+ * @author Son Han
+ *
+ */
 public class DPWSClient extends DefaultClient {
 	final static Charset ENCODING = StandardCharsets.UTF_8;
 	final static String	namespace	= "http://telecom-sudparis.eu/sa";

@@ -6,7 +6,8 @@ import eu.tsp.sa.dpws.DPWSUtil;
 public class TestMain {
 
 	/**
-	 * @param args
+	 * @author Son Han
+	 * 
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
