@@ -3,10 +3,10 @@ DPWSim/.classpath
 DPWSim/.project
 DPWSim/bin
 
-DPWSim-Client/.settings
-DPWSim-Client/.classpath
-DPWSim-Client/.project
-DPWSim-Client/bin
+DPWSim-Sample-Client/.settings
+DPWSim-Sample-Client/.classpath
+DPWSim-Sample-Client/.project
+DPWSim-Sample-Client/bin
 
 DPWSim-Device/.settings
 DPWSim-Device/.classpath
