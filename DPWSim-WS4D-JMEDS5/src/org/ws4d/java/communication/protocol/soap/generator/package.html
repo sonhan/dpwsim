@@ -1,0 +1,18 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+<title>org.ws4d.java.communcation.protocol.soap.generator package</title>
+</head>
+<body>
+<p>Provides an API to generate DPWS messages out of SOAP Messages alongside message receivers and handlers, and a converse generator (from DPWS messages to SOAP)</p>
+
+<p>Provides two main classes: <code>Message2SOAPGenerator</code>, generating SOAP messages out
+of DPWS messages, and its converse <code>SOAP2MessageGenerator</code>, generating DPWS messages out of SOAP messages.</p>
+
+<p>The MessageReceiver interface enables implementing classes to receive DPWS messages 
+created by the <code>SOAP2MessageGenerator</code>. The MessageHandler interface handles the received messages: each message type has its own
+specific handler (see <code>EventingMessageHandler</code>, <code>MetadataMessageHandler</code>, <code>DiscoveryMessageHandler</code> and <code>FaultMessageHandler</code> at org.ws4d.java.communication.protocol.soap.generator.handlers). These are both part of the SOAP2Generator API. </p>
+
+<p>The <code>UnexpectedElementException</code> and the <code>UnexpectedMessageException</code> arise when an incorrect message format has been received, that is, the message is of the wrong type in the case of the first exception, or an element is present that should not be, in the case of the second exception.</p>
+</body>
+</html>

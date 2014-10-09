@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+<title>org.ws4d.java.message package</title>
+</head>
+<body>
+<p>Modelisation of Messages, notably SOAP headers and Faults.</p>
+<p>The <code>SOAPHeader</code> class constructs an empty soap header with the following fields:
+<ul>
+<li>action</li>
+<li>messageId</li>
+<li>relatesTo</li>
+<li>replyTo</li>
+<li>to</li>
+</ul></p>
+<p>The abstract class <code>Message</code> and its implementation <code>InvokeMessage</code> 
+contain a <code>SoapHeader</code> instance as a field and provide methods to set the required SoapHeader fields
+based on the <code>Message</code> instance passed as attribute. The implementing class <code>InvokeMessage</code> additionally
+provides two constructors: a constructor with the field MessageID set (that is, representing a SOAP Request Message), and a second one
+without a messageID (simple one way operation). Methods to get and set the content of the message body are also implemented. </p>
+<p>The second implementing class of <code>Message</code> is the class <code>FaultMessage</code> which modelises a SOAP fault message.</p>
+</body>
+</html>

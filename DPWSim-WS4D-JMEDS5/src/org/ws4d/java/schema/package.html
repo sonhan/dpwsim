@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+<title>org.ws4d.java.schema package</title>
+</head>
+<body>
+<p>Contains all classes relating to XML Schema, and its representation in Java. Implements object representation of XML elements.</p>
+
+<p>These classes make use of the XML parser (<code>ElementParser</code>, <code>ElementHandler</code>) and serialiser <code>XmlSerializer</code>) defined in org.ws4d.java.io.fs</p>
+
+<p>Provides tools for modelising, representing and creating Schema elements as objects in the Java language,
+along with serialisation tool. Each type of element is represented by a class.</p>
+
+<p>XML types can be created using the extending classes of <code>Type</code> (notably, <code>SimpleType</code>, <code>ComplexType</code>. Extended simple/complex types, or restricted simple/complex types
+are modelised via the classes <code>ExtendedComplexContent</code>, <code>ExtendedSimpleContent</code>, <code>RestrictedComplexContent</code>, <code>RestrictedSimpleType</code></p>
+Provides support for each XML element to have an annotation (see <code>Annotation</code>).
+
+<p>
+<code>Schema</code> is the main Schema class, with its accompanying utility class <code>SchemaUtil</code> and provides calls to the parser and serialiser,
+as well as means to obtain information about the various elements and means to create, delete or modify them.
+</p>
+</body>
+</html>

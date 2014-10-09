@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+<title>org.ws4d.java.dispatch package</title>
+</head>
+<body>
+
+<p>Implements various tools for the handling of messages between local/remote devices and clients.</p>
+
+<p>This package contains three classes <code>MessageInformer</code>,<code>MessageListener</code> and an interface<code>MessageSelector</code>.
+The default implementation of the message selector <code>DefaultMessageSelector</code> is as follows: 
+the message selector looks for messages of a certain type or messages matching a number of properties, each with a list of values attached. 
+For the message to be selected, it must be an exact match. That is, a message will be selected if and only if
+it has matching values for all the given properties. All messages containing at
+least one value for this property will be considered. The <code>AllMessageSelector</code> implementation on the other hand
+ declares every incoming message  to be a match. Whilst the <code>DefaultMessageSelector</code> acts as a filter, <code>AllMessageSelector</code>
+simply selects all messages.
+</p>
+
+<p><code>MessageSelectors</code> are used to create new <code>MessageListeners</code>. That is, they enable a listener to register their interest in a specific
+type, or group of messages. A <code>MessageListener</code> instance is called each time an incoming message is received. These must be registered within a
+<code>MessageInformer</code> instance. This enables clients to receive notifications notified about every, or a selected type of messages sent through the framework.</p>
+
+<p>The package further contains classes defining <code>DeviceReferenceHandlers</code> upon registration of a new device (local or remote), creating a proxy in case of
+a remove device, and <code>ServiceReferenceHandlers</code>, holding the service references of both local and proxy services. Both provide initialisation, updates, removal
+and probing methods.</p>
+
+<p> <code>DeviceServiceRegistry</code> implements a Registry class through which service and device listeners can be registered, with which Device/Service references can be obtained
+from either their endpoint reference or their <code>HelloData</code> (data associated with a received Hello message). An HelloData instance will contain the following information
+<ul>
+<li>Endpoint reference</li>
+<li>Metadata version</li>
+<li>Scopes of the device</li>
+<li>Device port types</li>
+<li>Transport address of the device</li>
+</ul>
+</p>
+</body>
+</html>

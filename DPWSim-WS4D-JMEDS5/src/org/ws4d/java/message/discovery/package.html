@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+<title>org.ws4d.java package</title>
+</head>
+<body>
+<p>Modelises messages involved in the Discovery process, along with the accompanying discovery data they carry.</p>
+<p>The following types of messages are defined:</p>
+<ul>
+<li>Hello and Bye messages</li>
+<li>Probe and ProbeMatches messages</li>
+<li>Resolve and ResolveMatches messages</li>
+</ul>
+Each implementing class (<code>DiscoveryMessage</code>, <code>ProbeMessage</code>, 
+<code>ProbeMatchesMessage</code>, <code>ResolveMessage</code>, and <code>ResolveMatchMessage</code>)
+ constructs a SoapHeader, setting the action tag appropriately (see WS-Discovery Constants) .
+<p>The following classes <code>HelloMessage</code>, <code>ByeMessage</code>, <code>ProbeMatch</code> 
+and <code>ResolveMatch</code> all extend the class <code>DiscoveryData</code> and contain the appropriate
+discovery data for the type of message being sent, notably an EndPoint Reference and a Metadata version number for a ProbeMatch message, and an EndPoint Reference, a Metadataversion number, and a Transport Address for a ResolveMatch message. </p>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+<title>org.ws4d.java.service package</title>
+</head>
+<body> Defines a default (local) device and service according to WSD-Discovery specifications, and provides a way to detach an operation's executable code from its metadata.
+
+<p><code>DefaultDevice</code> constructs a local device (extends <code>DeviceCommons</code> and implements 
+<code>LocalDevice</code>)implementing the functionality of a Target Service as described in the WSDD-Discovery specification. A default device is capable of handling the following types of messages: Probe message,
+Resolve message, Get message. A default device is then capable of sending the following messages:
+Probe Matches message, Resolve Matches message, Hello message, Bye message, and Get Response message.
+A number of services can be added to the device (which must possess at least one  communication binding, and be explicitly started 
+for it to function).</p>
+
+<p><code>DefaultService</code> constructs a local service (extends <code>ServiceCommons</code> and implements
+<code>LocalService</code>). This class is a template class and does not define any operations. To implementing a working service,
+the class must be extended and operations created and added to the constructor.</p>
+
+<p>Two operations can have different names but refer to the same code via the 
+<code>OperationStub</code> and <code>InvokeDelegate</code> classes,both classes providing a way
+to detach the operation's executable code (invoke method) from its metadata.
+</p>
+
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+<title>org.ws4d.java.service.reference package</title>
+</head>
+<body>
+
+<p>Implementation of listeners to be notified of changes of Service/Device references through the use of callback methods.</p>
+<p>
+The interfaces <code>DeviceListener</code> and <code>ServiceListener</code> implement a number of methods
+designated as callback methods to receive notifications for a given set of events
+emanating from a device or service (implementing classes are respectively 
+<code>DefaultService</code> and <code>DefaultDevice</code>):
+<ul>
+<li>For the <code>Service</code>, if it was changed, created or deleted</li>
+<li>For the <code>Device</code>, if it was changed, created, deleted and whether it is currently running</li>
+</ul>
+
+The interface <code>Reference</code> defines a protocol to obtain specific information about the service (hosting or hosted).  The implementing classes
+<code>DeviceReference</code> and <code>ServiceReference</code> provide a specific interface for a device and for a service: with regards to the service, obtaining more information,
+and with regards to a device, methods to add or remove a listener (see <code>DefaultClient</code> for a listener class). Adding
+a listener will enable the client (listener) to receive information about device changes.
+</p>
+<p></p>The implementing classes of <code>ServiceReference</code> and <code>DeviceReference</code> (see org.ws4d.java.dispatch <code>ServiceReferenceHandler</code>, <code>DeviceReferenceHandler</code>)
+make use of these callback methods informing listeners of a device or service change, and providing a Callback handler.
+</p>
+<p>
+<p></p>
+</body>
+</html>

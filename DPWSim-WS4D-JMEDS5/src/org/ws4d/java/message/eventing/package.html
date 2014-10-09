@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+<title>org.ws4d.java.message.eventing package</title>
+</head>
+<body>
+<p>Implements the various WS-Eventing related messages: subscribe, unsubscribe, subscription end,
+renew and get status.</p>
+
+<p>All the classes herein extend the class <code>Message</code>. There are two types of messages here,
+messages, and response messages. The abstract class <code>EventingResponseMessage</code> is a blueprint
+for all the response type messages (<code>GetStatusResponseMessage</code>, <code>RenewResponseMessage</code>, <code>SubscribeResponseMessage</code>, 
+<code>SubscribeResponseMessage</code>, <code>UnsubscribeResponseMessage</code>). All other classes only extend <code>Message</code>.</p>
+
+<p><code>GetStatusMessage</code>, <code>RenewMessage</code>, <code>SubscribeMessage</code>, <code>SubscriptionEndMessage</code> and <code>UnsubscribeMessage</code>
+all construct an empty SOAP Header with the appropriate action tag (see WS-Eventing Constants), and a unique MessageID (tag messageID) set. In the case of <code>SubscribeMessage</code> and <code>SubscribeEndMessage</code>, the
+Endpoint reference and the URI of the subscribed to element are also required.  
+</p>
+
+<p><code>GetStatusResponseMessage</code>, <code>RenewResponseMessage</code>, <code>SubscribeResponseMessage</code> and <code>UnsubscribeResponseMessage</code> all extend <code>EventingResponseMessage</code> and
+all construct an empty SOAP Header with the appropriate action tag (see WS-Eventing Constants) set. In the case of <code>SubscribeResponseMessage</code>, the EndPointReference and valid URI of the subscribed to element are
+also required.
+</p>
+
+</body>
+</html>
